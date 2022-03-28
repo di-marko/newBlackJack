@@ -1,0 +1,106 @@
+:root {
+  --main-clr: rgba(240, 240, 240, 1);
+  --p-clr: #222;
+  --box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 2px 2px 5px rgba(0, 0, 0, 0.4);
+  --box-shadow-hover: -4px -4px 7px rgba(255, 255, 255, 1), 4px 4px 7px rgba(0, 0, 0, 0.4);
+  --hover: #ffeb3b;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--p-clr);
+  background-color: var(--main-clr);
+}
+
+h1 {
+  font-size: 12vw;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.msg-content p {
+  width: 80px;
+}
+
+#card-el {
+  margin-bottom: 10px;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  width: 25vw;
+  min-width: 200px;
+  background-color: var(--main-clr);
+  box-shadow: var(--box-shadow);
+}
+
+#message-el {
+  width: 35vw;
+  min-width: 220px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--main-clr);
+  background-color: var(--p-clr);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+#player-el {
+  width: 25vw;
+  min-width: 200px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  border: 2px solid var(--p-clr);
+  border-radius: 5px;
+  background-color: var(--main-clr);
+  box-shadow: var(--box-shadow);
+}
+
+button {
+  width: 25vw;
+  min-width: 200px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--main-clr);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(235, 235, 235, 1);
+  box-shadow: var(--box-shadow-hover);
+}
+
+button:active {
+  box-shadow: var(--box-shadow);
+}
